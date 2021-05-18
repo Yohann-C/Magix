@@ -1,0 +1,294 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	background-image: url("../../images/towerGod.png");
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#opponent_container{
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(29, 1, 61, 0.55);
+}
+#board{
+    height: 50%;
+    text-align: center;
+}
+#opponent_board{
+    height: 25%;
+}
+
+#player_board{
+    height: 25%;
+}
+
+#player_container{
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(29, 1, 61, 0.55);
+}
+
+#player_stats{
+    position: absolute;
+    left: 0;
+    height: 20vh;
+    width: 10%;
+}
+
+#end-turn{
+    position: absolute;
+    right: 0;
+    height: 20vh;
+    width: 10%;
+}
+.end_turn{
+    margin-top: 35px;
+    background-image: url("../../images/buttons.jpg");
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+#Hero_power{
+    margin-top: 35px;
+    background-image: url("../../images/buttons.jpg");
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+#card_container{
+    height: 25vh;
+    width: 80%;
+}
+
+#opponent_hp{
+    background-image: url("../../images/hp.png");
+    width: 100%;
+    height: 40%;
+    margin: auto;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+#opponent_mana, #player_mana{
+    background-image: url("../../images/mana.png");
+    width: 100%;
+    height: 30%;
+    margin: auto;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+#opponent_image{
+    margin: auto;
+    background-image: url("../../images/enemy4.gif");
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+  
+}
+
+
+#player_hp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("../../images/heart.png");
+    width: 100%;
+    height: 40%;
+
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+#player_timer{
+    background-image: url("../../images/clock.png");
+    width: 100%;
+    height: 40%;
+    margin-top: 10px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+#card_container {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	width:1000px;
+    margin: auto;
+}
+
+#player_board{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	width:1000px;
+    margin: auto;
+}
+#opponent_board{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	width:1000px;
+    margin: auto;
+}
+
+.character {
+	background-image: url("../../images/card.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 180px;
+    padding: 5px;
+	text-align:center;
+    align-items: center;
+    margin: auto 10px;
+	transition: 1s;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.character .image {
+	background-image:url("../../images/Hades.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    top: 8px;
+    left: 9px;
+    width: 115px;
+    height: 90px;
+}
+
+.character .desc{
+    position: relative;
+    top: 10px;
+    left: -10px;
+    width: 150px;
+    font-size: 0.8em;
+}
+
+.character .name {
+    position: relative;
+    top:10px;
+    left: -20px;
+	font-size:19px;
+	font-weight:bold;
+	text-shadow: 0 0 14px black;
+}
+
+#card_container .character:hover {
+	cursor:pointer;
+	background-color:#999;
+	box-shadow: 0 0 10px #999;
+}
+
+
+#opponent_board .character:hover {
+	cursor:pointer;
+	background-color:rgb(117, 38, 38);
+	box-shadow: 0 0 10px rgb(117, 38, 38);;
+}
+
+.atk, .def, .cost{
+    margin-top: 10px;
+  
+    width: 70%;
+    height: 160%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 2em;
+    font-weight: 900;
+    color: black;
+}
+
+.atk{
+    background-image: url("../../images/atk.png");
+}
+.def{
+    background-image: url("../../images/def.png");
+}
+.cost{
+    background-image: url("../../images/mana.png");
+}

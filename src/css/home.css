@@ -1,0 +1,121 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+
+#container{
+	width: 100%;
+}
+
+canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	background-image: url("../../images/backgroundK.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+    width: 100%;
+}
+
+.intro	{
+	text-align: center;
+	padding-top: 5%;
+	color: white;
+}
+
+.jouer {
+	background-image: url("../../images/buttons.jpg");
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.jouer {
+	
+	min-width: 150px;
+	margin-right: 2.5%;
+}
+
+
+.vs_IA{
+	background-image: url("../../images/buttons.jpg");
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.vs_IA{
+
+	min-width: 150px;
+	margin-left: 2.5%;
+}
+
+.log_out{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-image: url("../../images/buttons.jpg");
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+.buttons_play{
+	vertical-align: top;
+	align-items: center;
+}
+
+.bouttons{
+	margin-top: 5%;
+	text-align: center;
+}
+
+.leave_button{
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+.leave{
+	
+	background-image: url("../../images/buttons.jpg");
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+iframe{
+	margin-left: 30%;
+}
